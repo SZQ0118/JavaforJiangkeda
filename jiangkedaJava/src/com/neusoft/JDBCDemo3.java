@@ -3,7 +3,9 @@ package com.neusoft;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
-
+/*
+删除操作
+ */
 public class JDBCDemo3 extends Exception{
     public static void main(String[] args) throws Exception{
         Class.forName("com.mysql.jdbc.Driver");
