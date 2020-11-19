@@ -5,7 +5,7 @@ import java.sql.*;
 /*
 查询操作
  */
-public class JDBCDome4 extends Exception{
+public class JDBCDemo4 extends Exception{
     public static void main(String[] args)throws Exception {
         Class.forName("com.mysql.jdbc.Driver");
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jiangkeda","root","root");

@@ -43,10 +43,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.JDBCDome4">
-    <configuration name="JDBCDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo1" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\jiangkeda\JavaforJiangkeda\jiangkedaJava\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JDBCDemo7">
+    <configuration name="JDBCDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo4" />
       <module name="jiangkedaJava" />
       <extension name="coverage">
         <pattern>
@@ -58,8 +64,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo2" />
+    <configuration name="JDBCDemo5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo5" />
       <module name="jiangkedaJava" />
       <extension name="coverage">
         <pattern>
@@ -71,8 +77,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo3" />
+    <configuration name="JDBCDemo6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo6" />
       <module name="jiangkedaJava" />
       <extension name="coverage">
         <pattern>
@@ -84,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDome4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDome4" />
+    <configuration name="JDBCDemo7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo7" />
       <module name="jiangkedaJava" />
       <extension name="coverage">
         <pattern>
@@ -97,12 +103,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.Main" />
+    <configuration name="JDBCUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.utils.JDBCUtils" />
       <module name="jiangkedaJava" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JDBCDome4" />
-        <item itemvalue="Application.JDBCDemo3" />
-        <item itemvalue="Application.JDBCDemo2" />
-        <item itemvalue="Application.JDBCDemo1" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.JDBCDemo7" />
+        <item itemvalue="Application.JDBCDemo6" />
+        <item itemvalue="Application.JDBCUtils" />
+        <item itemvalue="Application.JDBCDemo5" />
+        <item itemvalue="Application.JDBCDemo4" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +147,7 @@
       <updated>1605679171922</updated>
       <workItem from="1605679173139" duration="659000" />
       <workItem from="1605684631444" duration="6393000" />
-      <workItem from="1605747636385" duration="1401000" />
+      <workItem from="1605747636385" duration="19714000" />
     </task>
     <servers />
   </component>
@@ -158,21 +167,68 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1071" height="298" key="GridCell.Tab.0.bottom" timestamp="1605691632775">
+    <state x="968" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1605753383882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1071" height="298" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605691632775" />
-    <state width="1071" height="298" key="GridCell.Tab.0.center" timestamp="1605691632774">
+    <state x="968" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605753383882" />
+    <state x="723" y="224" key="FileChooserDialogImpl" timestamp="1605752622533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1071" height="298" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605691632774" />
-    <state width="1071" height="298" key="GridCell.Tab.0.left" timestamp="1605691632774">
+    <state x="723" y="224" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605752622533" />
+    <state width="1069" height="148" key="GridCell.Tab.0.bottom" timestamp="1605777866706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1071" height="298" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605691632774" />
-    <state width="1071" height="298" key="GridCell.Tab.0.right" timestamp="1605691632775">
+    <state width="1069" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605777866706" />
+    <state width="1069" height="148" key="GridCell.Tab.0.center" timestamp="1605777866706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1071" height="298" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605691632775" />
+    <state width="1069" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605777866706" />
+    <state width="1069" height="148" key="GridCell.Tab.0.left" timestamp="1605777866706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1069" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605777866706" />
+    <state width="1069" height="148" key="GridCell.Tab.0.right" timestamp="1605777866706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1069" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605777866706" />
+    <state width="884" height="223" key="GridCell.Tab.1.bottom" timestamp="1605770028206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="884" height="223" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605770028206" />
+    <state width="884" height="223" key="GridCell.Tab.1.center" timestamp="1605770028206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="884" height="223" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605770028206" />
+    <state width="884" height="223" key="GridCell.Tab.1.left" timestamp="1605770028206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="884" height="223" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605770028206" />
+    <state width="884" height="223" key="GridCell.Tab.1.right" timestamp="1605770028206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="884" height="223" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605770028206" />
+    <state x="374" y="99" key="SettingsEditor" timestamp="1605752676860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="374" y="99" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605752676860" />
+    <state x="634" y="325" width="617" height="499" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1605752675756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="634" y="325" width="617" height="499" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1605752675756" />
+    <state x="822" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1605756182655">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="822" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605756182655" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/neusoft/utils/JDBCUtils.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
