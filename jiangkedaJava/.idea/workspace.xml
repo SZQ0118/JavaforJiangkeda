@@ -25,6 +25,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -37,7 +44,46 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.JDBCDemo3">
+    <configuration name="JDBCDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo1" />
+      <module name="jiangkedaJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo2" />
+      <module name="jiangkedaJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.JDBCDemo3" />
+      <module name="jiangkedaJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.neusoft.Main" />
       <module name="jiangkedaJava" />
@@ -61,6 +107,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JDBCDemo3" />
+        <item itemvalue="Application.JDBCDemo2" />
+        <item itemvalue="Application.JDBCDemo1" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -73,7 +122,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605679171922</updated>
-      <workItem from="1605679173139" duration="18000" />
+      <workItem from="1605679173139" duration="659000" />
+      <workItem from="1605684631444" duration="6393000" />
+      <workItem from="1605747636385" duration="307000" />
     </task>
     <servers />
   </component>
@@ -90,5 +141,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1071" height="298" key="GridCell.Tab.0.bottom" timestamp="1605691632775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1071" height="298" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605691632775" />
+    <state width="1071" height="298" key="GridCell.Tab.0.center" timestamp="1605691632774">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1071" height="298" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605691632774" />
+    <state width="1071" height="298" key="GridCell.Tab.0.left" timestamp="1605691632774">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1071" height="298" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605691632774" />
+    <state width="1071" height="298" key="GridCell.Tab.0.right" timestamp="1605691632775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1071" height="298" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605691632775" />
   </component>
 </project>
