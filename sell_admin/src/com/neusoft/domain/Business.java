@@ -6,7 +6,7 @@ public class Business {
     private String businessName;
     private String businessAddress;
     private String businessExplain;
-    private Double starPrice;
+    private Double startPrice;
     private Double deliveryPrice;
 
     public Business() {
@@ -18,7 +18,7 @@ public class Business {
         this.businessName = businessName;
         this.businessAddress = businessAddress;
         this.businessExplain = businessExplain;
-        this.starPrice = starPrice;
+        this.startPrice = starPrice;
         this.deliveryPrice = deliveryPrice;
     }
 
@@ -62,12 +62,12 @@ public class Business {
         this.businessExplain = businessExplain;
     }
 
-    public double getStarPrice() {
-        return starPrice;
+    public double getStartPrice() {
+        return startPrice;
     }
 
-    public void setStarPrice(double starPrice) {
-        this.starPrice = starPrice;
+    public void setStartPrice(double startPrice) {
+        this.startPrice = startPrice;
     }
 
     public double getDeliveryPrice() {
@@ -80,14 +80,11 @@ public class Business {
 
     @Override
     public String toString() {
-        return "Business{" +
-                "businessId=" + businessId +
-                ", password='" + password + '\'' +
-                ", businessName='" + businessName + '\'' +
-                ", businessAddress='" + businessAddress + '\'' +
-                ", businessExplain='" + businessExplain + '\'' +
-                ", starPrice=" + starPrice +
-                ", deliveryPrice=" + deliveryPrice +
-                '}';
+        return  "\n商家编号："+this.businessId+
+                "\n商家名称："+this.businessName+
+                "\n商家地址："+this.businessAddress+
+                "\n商家介绍："+this.businessExplain+
+                "\n起送费："+this.startPrice +
+                "\n配送费："+this.deliveryPrice;
     }
 }

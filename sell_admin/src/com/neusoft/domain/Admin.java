@@ -40,10 +40,10 @@ public class Admin {
 
     @Override
     public String toString() {
-        return "Admin{" +
-                "adminId=" + adminId +
-                ", adminName='" + adminName + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        return
+                "\n用户编号:" + this.adminId +
+                "\n用户名:" + this.adminName +
+                "\n密码:" + this.password ;
+
     }
 }

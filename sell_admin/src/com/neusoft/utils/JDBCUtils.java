@@ -2,8 +2,6 @@ package com.neusoft.utils;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
-
-
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.InputStream;
