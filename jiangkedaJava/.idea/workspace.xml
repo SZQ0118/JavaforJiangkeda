@@ -116,17 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JDBCDemo7" />
@@ -148,6 +137,7 @@
       <workItem from="1605679173139" duration="659000" />
       <workItem from="1605684631444" duration="6393000" />
       <workItem from="1605747636385" duration="19714000" />
+      <workItem from="1605835130451" duration="485000" />
     </task>
     <servers />
   </component>
