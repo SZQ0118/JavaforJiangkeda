@@ -14,7 +14,7 @@ public class MenuEnter {
         int menu = 0;
         while(menu!=3){
             System.out.println("1.饿了么工作人员登陆入口\n2.饿了么商家登陆入口\n3.退出");
-            System.out.println("请输入你要选择的序号");
+            System.out.println("请输入你要选择的序号:");
             menu = input.nextInt();
             switch (menu){
                 case 1:
