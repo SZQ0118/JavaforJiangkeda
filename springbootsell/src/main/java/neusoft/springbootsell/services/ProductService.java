@@ -15,12 +15,16 @@ public interface ProductService {
     Page<ProductInfo> findAll(Pageable pageable);
     //新增商品
     ProductInfo save(ProductInfo productInfo);
+
     //上架
-    void increaseStock(String productId);
+    void onSale(String productId);
     //下架
-    void decreaseStock(String productId);
+    void offSale(String productId);
     //加库存
+    void increaseStock(String productId);
     //减库存
+    void decreaseStock(String productId);
+
 
 
 

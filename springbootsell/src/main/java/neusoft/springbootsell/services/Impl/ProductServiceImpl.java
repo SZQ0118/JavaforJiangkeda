@@ -1,6 +1,9 @@
 package neusoft.springbootsell.services.Impl;
 
 import neusoft.springbootsell.dataobject.ProductInfo;
+import neusoft.springbootsell.enums.ProductStatusEnum;
+import neusoft.springbootsell.enums.ResultEnum;
+import neusoft.springbootsell.exception.SellException;
 import neusoft.springbootsell.repository.ProductInfoRepository;
 import neusoft.springbootsell.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +23,14 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductInfo> findUpAll() {
-        return repository.findByProductStatusIs(0);
+        return repository.findByProductStatus(ProductStatusEnum.UP.getCode());
     }
 
     @Override
     public Page<ProductInfo> findAll(Pageable pageable) {
-       return repository.findAll(pageable);
+        Page<ProductInfo> productInfoPage = repository.findAll(pageable);
+        //TODO
+        return productInfoPage;
     }
 
     @Override
@@ -34,16 +39,44 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void increaseStock(String productId) {
+    public void onSale(String productId) {
+        //查一下
         ProductInfo pro = repository.findOne(productId);
-        pro.setProductStatus(0);
+        //进行判断
+        if(pro==null){
+           throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+        }
+        if(pro.getProductStatus() == ProductStatusEnum.UP.getCode()){
+            throw  new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+        }
+        //更改值
+        pro.setProductStatus(ProductStatusEnum.UP.getCode());
         repository.save(pro);
     }
 
     @Override
-    public void decreaseStock(String productId) {
+    public void offSale(String productId) {
+        //查一下
         ProductInfo pro = repository.findOne(productId);
-        pro.setProductStatus(1);
+        //进行判断
+        if(pro==null){
+            throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+        }
+        if(pro.getProductStatus() == ProductStatusEnum.UP.getCode()){
+            throw  new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+        }
+        ///更改值
+        pro.setProductStatus(ProductStatusEnum.DOWN.getCode());
         repository.save(pro);
+    }
+
+    @Override
+    public void increaseStock(String productId) {
+
+    }
+
+    @Override
+    public void decreaseStock(String productId) {
+
     }
 }
