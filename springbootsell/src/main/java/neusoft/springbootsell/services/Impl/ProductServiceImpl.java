@@ -39,7 +39,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void onSale(String productId) {
+    public ProductInfo onSale(String productId) {
         //查一下
         ProductInfo pro = repository.findOne(productId);
         //进行判断
@@ -51,32 +51,32 @@ public class ProductServiceImpl implements ProductService {
         }
         //更改值
         pro.setProductStatus(ProductStatusEnum.UP.getCode());
-        repository.save(pro);
+        return repository.save(pro);
     }
 
     @Override
-    public void offSale(String productId) {
+    public ProductInfo offSale(String productId) {
         //查一下
         ProductInfo pro = repository.findOne(productId);
         //进行判断
         if(pro==null){
             throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
         }
-        if(pro.getProductStatus() == ProductStatusEnum.UP.getCode()){
+        if(pro.getProductStatus() == ProductStatusEnum.DOWN.getCode()){
             throw  new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
         }
         ///更改值
         pro.setProductStatus(ProductStatusEnum.DOWN.getCode());
-        repository.save(pro);
+        return repository.save(pro);
     }
 
     @Override
     public void increaseStock(String productId) {
-
+        //TODO
     }
 
     @Override
     public void decreaseStock(String productId) {
-
+        //TODO
     }
 }

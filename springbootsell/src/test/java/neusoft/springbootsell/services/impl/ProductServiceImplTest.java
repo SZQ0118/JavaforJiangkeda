@@ -1,6 +1,7 @@
 package neusoft.springbootsell.services.impl;
 
 import neusoft.springbootsell.dataobject.ProductInfo;
+import neusoft.springbootsell.enums.ProductStatusEnum;
 import neusoft.springbootsell.services.Impl.ProductServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
@@ -33,12 +34,11 @@ public class ProductServiceImplTest{
      */
     @Test
     public void findAll(){
-        int pageNum  = 1;
-        int pageSize =10;
-        PageRequest pageRequest = new PageRequest(pageNum - 1, pageSize);
-        Page<ProductInfo> all = productService.findAll(pageRequest);
-        System.out.println(all);
-        Assert.assertNotNull(all);
+
+        PageRequest pageRequest = new PageRequest(0,2);
+        Page<ProductInfo> list = productService.findAll(pageRequest);
+        System.out.println(list);
+        Assert.assertNotEquals(0,list.getTotalElements());
     }
     /**
      * 查询所有在架商品
@@ -49,7 +49,7 @@ public class ProductServiceImplTest{
         for(ProductInfo info:upAll){
             System.out.println(info);
         }
-        Assert.assertNotNull(upAll);
+        Assert.assertNotEquals(0,upAll.size());
     }
     /**
      * 新增商品
@@ -73,16 +73,18 @@ public class ProductServiceImplTest{
      * 上架商品
      */
     @Test
-    public void increaseStock(){
-        productService.increaseStock("121221");
+    public void onSale(){
+        ProductInfo productInfo = productService.onSale("121221");
+        Assert.assertEquals(ProductStatusEnum.UP.getCode(),productInfo.getProductStatus());
     }
 
     /**
      * 下架商品
      */
     @Test
-    public void decreaseStock(){
-        productService.decreaseStock("111");
+    public void offSale(){
+        ProductInfo productInfo = productService.offSale("121221");
+        Assert.assertEquals(ProductStatusEnum.DOWN.getCode(),productInfo.getProductStatus());
     }
     /**
      * 加库存

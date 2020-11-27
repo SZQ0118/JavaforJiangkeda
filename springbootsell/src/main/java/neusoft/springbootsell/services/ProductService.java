@@ -17,9 +17,9 @@ public interface ProductService {
     ProductInfo save(ProductInfo productInfo);
 
     //上架
-    void onSale(String productId);
+    ProductInfo onSale(String productId);
     //下架
-    void offSale(String productId);
+    ProductInfo offSale(String productId);
     //加库存
     void increaseStock(String productId);
     //减库存

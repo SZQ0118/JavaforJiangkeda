@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -38,6 +39,12 @@ public class OrderDetailRepositoryTests {
     public void upate(){
         OrderDetail orderDetail = new OrderDetail();
         orderDetail.setOrderId("1");
+    }
+    @Test
+    public void findAll()
+    {
+        List<OrderDetail> list = orderDetailRepository.findAll();
+        Assert.assertNotEquals(0,list.size());
     }
 
 }
