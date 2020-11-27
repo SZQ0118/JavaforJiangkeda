@@ -8,7 +8,7 @@
         <version>1.5.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>neusoft</groupId>
+    <groupId>com.neusoft</groupId>
     <artifactId>springbootsell</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springbootsell</name>

@@ -16,7 +16,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Data
 @DynamicUpdate
-public class ProducrtCategory {
+public class ProductCategory {
     /**类目Id*/
     @Id
     @GeneratedValue
@@ -34,7 +34,7 @@ public class ProducrtCategory {
     /**更新时间*/
     private Date updateTime;
 
-    public ProducrtCategory(String categoryName, Integer categoryType) {
+    public ProductCategory(String categoryName, Integer categoryType) {
         this.categoryName = categoryName;
         this.categoryType = categoryType;
     }

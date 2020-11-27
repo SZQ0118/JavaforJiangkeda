@@ -1,10 +1,12 @@
 package neusoft.springbootsell.dataobject;
 
+import com.sun.org.apache.xerces.internal.dom.PSVIElementNSImpl;
 import lombok.Data;
+import neusoft.springbootsell.enums.PayStatusEnum;
+import neusoft.springbootsell.enums.ProductStatusEnum;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -16,28 +18,35 @@ import java.util.Date;
 @Data
 @DynamicUpdate
 public class ProductInfo {
+
+    /** 商品id */
     @Id
-    @GeneratedValue
-    /**商品Id*/
-    private String ProductId;
+    private String productId;
 
-    /**商品名字Id*/
+    /** 商品名字 */
     private String productName;
-    /**商品单价*/
-    private BigDecimal productPrice;
-    /**库存*/
-    private Integer productStock;
-    /**描述*/
-    private String productDecription;
-    /**小图*/
-    private String productIcon;
-    /**状态 0正常 1下架 */
-    private Integer productStatus = 0;
 
-    /**创建时间*/
+    /** 单价 */
+    private BigDecimal productPrice;
+
+    /** 库存 */
+    private Integer productStock;
+
+    /** 描述 */
+    private String productDescription;
+
+    /** 小图 */
+    private String productIcon;
+
+    /** 状态 0正常 1下架 */
+    private Integer productStatus = ProductStatusEnum.UP.getCode();
+    /** 类目编号 */
+    private Integer categoryType;
+
+    /** 创建时间*/
     private Date createTime;
 
-    /**更新时间*/
+    /** 更新时间*/
     private Date updateTime;
 
 }
