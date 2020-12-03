@@ -1,0 +1,136 @@
+<html>
+<#include "../common/header.ftl">
+<body>
+<div id="wrapper" class="toggled">
+    <#--    边栏nav-->
+    <#include "../common/nav.ftl">
+    <#--     右侧-->
+    <div id="page-content-wrapper">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <h3>
+                        商品列表
+                    </h3>
+                    <table class="table table-bordered table-condensed">
+                        <thead>
+                        <tr>
+                            <th>商品id</th>
+                            <th>名称</th>
+                            <th>图片</th>
+                            <th>单价</th>
+                            <th>库存</th>
+                            <th>描述</th>
+                            <th>类目</th>
+                            <th>状态</th>
+                            <th>创建时间</th>
+                            <th>修改时间</th>
+                            <th colspan="2">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <#--                        通过.content 获取page中的每一个对象-->
+                        <#list productInfoPage.content as productInfo>
+                            <tr>
+                                <td>${productInfo.productId}</td>
+                                <td>${productInfo.productName}</td>
+                                <td>
+                                    <img height="50" ,width="50" src="${productInfo.productIcon}" alt="">
+                                </td>
+                                <td>${productInfo.productPrice}</td>
+                                <td>${productInfo.productStock}</td>
+                                <td>${productInfo.productDescription}</td>
+                                <td>${productInfo.categoryType}</td>
+                                <#if productInfo.productStatus==0>
+                                    <td>上架中</td>
+                                    <#else >
+                                    <td>下架中</td>
+                                </#if>
+                                <td>${productInfo.createTime}</td>
+                                <td>${productInfo.updateTime}</td>
+                                <td>
+                                    <a href="/seller/product/index?productId=${productInfo.getProductId()}">修改</a>
+                                </td>
+                                <td>
+                                    <#if productInfo.productStatus==1>
+                                        <a id="modal-616015" href="#modal-container-616015"  data-toggle="modal" >上架</a>
+                                        <div class="modal fade" id="modal-container-616015" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                        <h4 class="modal-title" id="myModalLabel">
+                                                            提示
+                                                        </h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        确定是否上架
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                                        <a href="/seller/product/up?productId=${productInfo.getProductId()}"><button type="button" class="btn btn-primary" >确定</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <#else >
+                                            <a id="modal-off" href="#modal-container-off" data-toggle="modal">下架</a>
+                                            <div class="modal fade" id="modal-container-off" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                            <h4 class="modal-title" id="myModalLabel">
+                                                                提示
+                                                            </h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            是否下架商品
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                                            <a href="/seller/product/off?productId=${productInfo.getProductId()}"><button type="button" class="btn btn-primary" >确定</button></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </#if>
+                                </td>
+                            </tr>
+                        </#list>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-12 column">
+<#--                    pull-right 控件靠右-->
+                    <ul class="pagination pull-right">
+                     <#if page lte 1>
+                        <li class="disabled">
+                            <a href="#">上一页</a>
+                        </li>
+                         <#else >
+                             <li><a  href="/seller/product/list?page=${page-1}&size=${size}">上一页</a></li>
+                     </#if>
+<#--                       获取查询数据的总页数 ${productInfoPage.getTotalPages()}-->
+<#--                        1..val 代表从1 开始循环-->
+                        <#list 1..productInfoPage.getTotalPages() as index>
+                            <#if page == index>
+                                <li class="disabled"><a href="#">${index}</a></li>
+                            <#else >
+                                <li><a href="/seller/product/list?page=${index}&size=${size}">${index}</a></li>
+                            </#if>
+                        </#list>
+                      <#if page gte productInfoPage.getTotalPages()>
+                          <li class="disabled"><a href="#">下一页</a></li>
+                          <#else >
+                              <li><a  href="/seller/product/list?page=${page+1}&size=${size}">下一页</a></li>
+                      </#if>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

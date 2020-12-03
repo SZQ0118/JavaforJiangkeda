@@ -38,6 +38,10 @@ public enum ResultEnum implements CodeEnum{
     ORDER_FINISH_SUCCESS(22, "订单完结成功"),
 
     PRODUCT_STATUS_ERROR(23, "商品状态不正确"),
+
+    CATEGORY_TYPE_ERROR(24, "类目编号已存在"),
+    CATEGORY_NAME_ERROR(25, "类目名称已存在"),
+    SELLER_ID_ERROR(26, "账号或密码有误"),
     ;
 
     private Integer code;
